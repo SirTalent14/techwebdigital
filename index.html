@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Web Digital Technology | Software & Gadgets</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+<a href="#" class="logo-link"><img src="logo.svg" alt="Tech Web Digital Logo" class="main-logo"></a>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Engineering the Future of Your Business.</h1>
+            <p>Custom software engineering and premium tech retail for the modern Zimbabwean entrepreneur.</p>
+            <a href="#contact" class="btn-primary">Get a Free Quote</a>
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>Our Story</h2>
+            <div class="about-grid">
+                <div class="about-item">
+                    <h3>The Vision</h3>
+                    <p>Founded by <strong>Talent Manjiche</strong>, Tech Web Digital Technology was born out of a simple observation: the future of Zimbabwe is digital, but the tools to get there aren't always accessible. Starting with a passion for coding during my time at <strong>Vimbai High School</strong>, I realized that local businesses needed more than just hardware—they needed custom solutions.</p>
+                </div>
+                <div class="about-item">
+                    <h3>The Journey</h3>
+                    <p>What began as academic projects—developing <strong>Visual Basic</strong> invoice generators and pharmacy management systems—evolved into a professional mission. I saw first-hand how software could transform a small shop into an efficient enterprise. I didn't just want to write code; I wanted to provide the physical tools to run it.</p>
+                </div>
+            </div>
+            <div class="about-footer">
+                <h3>Why Choose Us?</h3>
+                <p>We don’t just sell laptops or build websites. We engineer the digital infrastructure of your success. Whether you are a developer looking for gear or a business owner needing a system in <strong>Python or HTML/CSS</strong>, we bring the expertise and local understanding to make it happen.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Core Solutions</h2>
+        <div class="service-grid">
+            <div class="service-card"><h3>Custom Software</h3><p>Pharmacy & Retail systems (Python/VB).</p></div>
+            <div class="service-card"><h3>Web Development</h3><p>High-performance sites with local payments.</p></div>
+            <div class="service-card"><h3>Premium Gadgets</h3><p>High-end hardware for professionals.</p></div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>Featured Projects</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item"><h3>Pharmacy System</h3><p>Built with Python & SQL</p></div>
+            <div class="portfolio-item"><h3>Invoice Tool</h3><p>Built with Visual Basic</p></div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="userName" placeholder="Your Name" required>
+            <select id="serviceType">
+                <option value="Software">Custom Software</option>
+                <option value="Web">Web Development</option>
+                <option value="Gadgets">Gadget Inquiry</option>
+            </select>
+            <textarea id="userMessage" placeholder="How can we help?"></textarea>
+            <button type="submit">Send via WhatsApp</button>
+        </form>
+    </section>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Tech Web Digital Technology | Built by Talent Manjiche</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('userName').value;
+            const service = document.getElementById('serviceType').value;
+            const message = document.getElementById('userMessage').value;
+            const myNumber = "263785349890";
+            const finalMessage = `Hello Tech Web! My name is ${name}. I am interested in ${service}. Details: ${message}`;
+            window.open(`https://wa.me/${myNumber}?text=${encodeURIComponent(finalMessage)}`, '_blank');
+        });
+    </script>
+
+</body>
+</html>
