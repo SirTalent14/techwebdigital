@@ -45,3 +45,113 @@ button { background: #25D366; color: white; border: none; padding: 15px; cursor:
 
 /* Footer */
 .site-footer { background: var(--dark); color: white; padding: 30px; text-align: center; font-size: 0.9rem; }
+
+.shop-section { padding: 80px 5%; background: #fff; }
+.section-subtitle { margin-bottom: 40px; color: #666; }
+
+.shop-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 30px; 
+}
+
+.product-card { 
+    background: #fdfdfd; 
+    padding: 20px; 
+    border-radius: 15px; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05); 
+    transition: 0.3s; 
+    position: relative;
+    border: 1px solid #eee;
+}
+
+.product-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,212,255,0.2); }
+
+.product-card img { width: 100%; border-radius: 10px; margin-bottom: 15px; }
+
+.product-badge { 
+    position: absolute; top: 10px; right: 10px; 
+    background: var(--accent); color: var(--dark); 
+    padding: 5px 12px; font-size: 0.7rem; font-weight: bold; border-radius: 20px; 
+}
+
+.price { display: block; font-size: 1.2rem; font-weight: bold; margin: 15px 0; color: var(--dark); }
+
+.buy-btn { 
+    display: block; background: var(--dark); color: white; 
+    text-decoration: none; padding: 12px; border-radius: 8px; font-weight: bold; 
+    transition: 0.3s;
+}
+
+.buy-btn:hover { background: var(--accent); color: var(--dark); } /* Brand Filter Styling */
+.brand-filters {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-tag {
+    background: #f0f0f0;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: var(--dark);
+    border: 1px solid #ddd;
+    cursor: default;
+}
+
+/* Enhancing Product Cards */
+.product-card {
+    text-align: left; /* Makes the specs easier to read */
+}
+
+.product-card h3 {
+    font-size: 1.1rem;
+    margin: 10px 0 5px;
+}
+
+.product-card p {
+    font-size: 0.9rem;
+    color: #555;
+    height: 60px; /* Keeps all cards the same height */}
+{
+/* Brand Filter Styling */
+.brand-filters {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-tag {
+    background: #f0f0f0;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: var(--dark);
+    border: 1px solid #ddd;
+    cursor: default;
+}
+
+/* Enhancing Product Cards */
+.product-card {
+    text-align: left; /* Makes the specs easier to read */
+}
+
+.product-card h3 {
+    font-size: 1.1rem;
+    margin: 10px 0 5px;
+}
+
+.product-card p {
+    font-size: 0.9rem;
+    color: #555;
+    height: 60px; /* Keeps all cards the same height */
+}
+
+
